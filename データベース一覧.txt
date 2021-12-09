@@ -1,0 +1,6 @@
+データベース名:payment
+ユーザー:kake
+パスワード:ibo
+テーブル名:saving,payments
+savingの内容:目標貯金額(targets)、目標年月(months)、現在の貯金総額(currents)
+paymentsの内容:今月の収入(incomes),食費(foods),住居費(houses),水道光熱費(costs),通信費(com_costs),その他(etc)

@@ -1,0 +1,70 @@
+main {
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    margin: 0 0 30px 0;
+    letter-spacing: 5px;
+  }
+  
+  html {
+    background-color: #a8e4ff;
+  }
+  
+  body {
+    background-color: #fff;
+    padding: 200px 200px 200px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .s {
+    text-align: center;
+  }
+  
+  .btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f44336;
+    display: block;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 0 #9e2b23;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    margin: 110px auto 0;
+    letter-spacing: 2px;
+  }
+  
+  .text {
+    position: relative;
+    left: 50px;
+  }
+  .syushi {
+    position: relative;
+    left: 50px;
+  }
+  span.b {
+    font-size: 150%;
+  }
+  
+  @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+    #menu-bg {
+    background-color: #00FFFF; /*青色*/
+    }
+    }
+  
+    @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+        #menu-bg {
+        background-color: #FF0000; /*赤色*/
+        }
+        }
+        @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+            #menu-bg {
+            background-color: #00FF00; /*緑色*/
+            }
+            }

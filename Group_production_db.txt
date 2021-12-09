@@ -1,0 +1,31 @@
+# データベース payment の作成
+set names utf8;
+drop database if exists payment;
+create database payment character set utf8 collate utf8_general_ci;
+# ユーザー「kake」にパスワード「ibo」を設定し、データベース「payment」に対する全ての権限を付与
+grant all privileges on payment.* to kake@localhost identified by 'ibo';
+# データベースpayment を使用
+use payment;
+# テーブル saving の作成
+create table saving(
+    targets int,
+    months DATE,
+    currents int
+    );
+# テーブル saving にデータを挿入
+insert into saving(targets, months, currents) values(50000, 201219, 30000);
+# テーブル payments の作成
+create table payments (
+    months DATE,
+    income int,
+    foods int,
+    houses int,
+    costs int,
+    comm_costs int,
+    etc int
+    );
+# テーブル payments にデータを挿入
+insert into payments(months, income, houses, costs, comm_costs) values(201019, 300000, 50000, 40000, 5000);
+insert into payments(months, foods) values(201110, 5000);
+insert into payments(months, etc) values(201111, 8000);
+
